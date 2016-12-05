@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300|Quicksand|Alegreya);
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  color: #E4FFC9;
+  text-shadow: 0 4px 6px rgba(0,0,0,.5);
+  background-color: #476C47;
+}
+
+/*nav////////*/
+
+nav {
+  box-shadow: 10px 10px 10px #3A573A, -2px 0px 10px #3A573A
+}
+
+.nav-pills>li>a {
+  font-family: 'Nunito', sans-serif;
+  color: #E4FFC9;
+  background-color: #3A573A;
+  border-radius: 5px 50px;
+
+  transition-timing-function: ease-in-out;
+  -webkit-transition: color .5s, background-color .5s;
+  transition: color .5s, background-color .5s;
+}
+
+.nav-pills>li:hover{
+  border-radius: 5px 50px;
+  background-color: rgba(228, 255, 201, .3);
+}
+
+li>a:hover {
+  color: #3A573A;
+}
+
+
+.nav-fixed {
+  height: 100vh;
+  background-color:rgba(228, 255, 201, .3);
+  position: fixed;
+  padding-top: 20px;
+}
+
+/*content////*/
+
+.content {
+  padding: 0px 12px 12px 12px;
+  background-color: #3A573A;
+  position: relative;
+  top: 215px;
+  border:2px solid #E4FFC9;
+  border-radius: 5px 50px;
+}
+
+.content h2 {
+  font-family: 'Nunito', sans-serif;
+}
+
+#flower {
+  height: 200px;
+  border-radius: 10px;
+  background-image: url(../img/flower.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+/*footer////*/
+
+footer {
+  font-family: 'Alegreya', sans-serif;
+  padding-top: 8px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #3A573A;
+  position: fixed;
+  top: 300px;
+}
+
+/*media queries*/
+
+@media (max-width: 992px) {
+  .content{
+    background-color: #476C47;
+    border: none;
+    box-shadow: 10px 10px 10px #3A573A, -2px 0px 10px #3A573A;
+  }
+}
+
+@media (min-width: 992px) {
+  .adjust{
+    position: relative;
+    right: 146px;
+  }
+}
+
